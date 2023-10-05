@@ -1,0 +1,15 @@
+@import "src/variables";
+@import "src/colors";
+
+@mixin btn() {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  margin: $base-margin;
+  font-size: $base-font-size;
+}
+.toggle {
+  @include btn();
+}

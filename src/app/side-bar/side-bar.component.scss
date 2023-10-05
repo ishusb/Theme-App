@@ -1,0 +1,31 @@
+@import "src/variables";
+@import "src/colors";
+@import "src/functions";
+@import "app/app.component.scss";
+
+body {
+  h1 {
+    padding: $base-padding;
+    font-size: $font-size-xxl;
+  }
+  p {
+    font-size: $font-size-lg;
+    margin: $base-margin;
+  }
+}
+
+.btn {
+  @include btn;
+  &:hover {
+    background-color: map-get($colors, "orange");
+  }
+}
+
+.btn1 {
+  @include btn;
+  background-color: bisque;
+  border: 0;
+  &:hover {
+    background-color: light-comp(black);
+  }
+}
